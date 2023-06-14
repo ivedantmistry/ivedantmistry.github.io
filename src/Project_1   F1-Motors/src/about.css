@@ -1,0 +1,573 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+                            /* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 9%;
+  z-index: 1000;
+  background: #2666cf;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.header .logo span {
+  color: #f5f2e7;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.7rem;
+  color: #f5f2e7;
+}
+
+.header .navbar a:hover {
+  color: #000b49;
+}
+
+.header {
+  color: #000b49;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  display: none;
+}
+
+.header-about .heading {
+  height: 100px;
+
+  background-color: #f2f2f2;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 35px;
+  padding-right: 100px;
+}
+
+.Mid {
+  display: flex;
+  /* padding: -10px; */
+}
+
+.Mid .abt {
+  color: #000;
+  padding: 100px 20px 100px 70px;
+  height: 800px;
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.Mid .ige img{
+  background-color: white;
+  padding-top: 130px;
+  padding-right: 40px;
+  background-position: right;
+}
+
+
+.top{
+  background-color: #f2f2f2;
+  height: 1500px;
+}
+.top .abt-head{
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  color: rebeccapurple;
+
+}
+
+.top .content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 2fr));
+  gap: 4rem;
+  padding: 30px 40px 0px 40px;
+  
+}
+
+
+.top .content .top-left{
+  padding: 0px 0px 0px 75px;
+}
+
+.top .content .top-right{
+  padding: 0px 0px 30px 75px;
+  
+}
+
+.top .content .bottom-left{
+  padding: 0px 0px 0px 75px;
+  
+}
+.top .content .bottom-right{
+  padding: 0px 0px 30px 75px;
+  
+}
+.top .content .fifth{
+  padding: 0px 0px 30px 75px;
+  
+}
+.top .content .sixth{
+  padding: 0px 0px 30px 75px;
+  
+}
+
+
+.top .content .top-left{
+  cursor: pointer;
+}
+.top .content .top-right{
+  cursor: pointer;
+}
+.top .content .bottom-left{
+  cursor: pointer;
+}
+.top .content .bottom-right{
+  cursor: pointer;
+}
+
+.top .content .fifth{
+  cursor: pointer;
+}
+.top .content .sixth{
+  cursor: pointer;
+}
+
+
+.top .content .top-left img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+
+
+.top .content .top-right img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+
+.top .content .bottom-right img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+
+.top .content .bottom-left img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+.top .content .fifth img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+.top .content .sixth img {
+  /* adjust the below to control the 3D effect */
+  --x: 10px;
+  --y: 20px;
+  transform: perspective(1000px) rotateX(var(--_a,30deg));
+  /* */
+  clip-path: polygon(       
+     var(--y)              var(--y),       
+     calc(100% - var(--y)) var(--y),       
+     calc(100% - var(--y)) calc(100% - var(--y)),       
+     calc(100% - var(--y) - var(--x)) var(--_c,100%),       
+     calc(var(--x) + var(--y))        var(--_c,100%),      
+     var(--y)        calc(100% - var(--y))       
+     );
+  outline: var(--y) solid rgba(0,0,0,0.4);
+  outline-offset: calc(-1*var(--y));
+  padding: var(--y) var(--y) 0 var(--y);
+  transition: 1s;
+}
+
+.top .content .top-left:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+.top .content .top-right:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+.top .content .bottom-right:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+.top .content .bottom-left:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+.top .content .fifth:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+.top .content .sixth:hover img {
+  --_a: 0deg;
+  --_c: calc(100% - var(--y));
+}
+
+
+.top .content .top-left h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: 0.8s;
+}
+
+.top .content .top-right h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: 0.8s;
+}
+.top .content .bottom-right h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: 0.8s;
+}
+.top .content .bottom-left h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: 0.8s;
+}
+.top .content .fifth h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: 0.8s;
+}
+.top .content .sixth h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  transform: translateY(250%);
+  transition: .8s;
+}
+
+
+.top .content .top-left:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+.top .content .top-right:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+.top .content .bottom-right:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+.top .content .bottom-left:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+.top .content .fifth:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+.top .content .sixth:hover h3{
+  transform: translateY(10%);
+  transition: .8s .2s;
+}
+
+
+                            /* Footer */
+
+.footer {
+  background: #ffe3de;
+  /* width:1500px; */
+  /* padding-left: 60px; */
+  padding-left: 100px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.55rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.77rem;
+  padding: 1.2rem 0;
+  color: var(--light-color);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 1.9rem;
+}
+
+
+
+/*
+iPad and Surface
+*/
+@media (max-width:991px){
+  html{
+      font-size: 55%;
+  }
+
+  .header{
+    font-size: 20px;
+      padding:2rem;
+  }
+
+  .header.active{
+      padding:2rem;
+  }
+
+  section{
+      padding:2rem;
+  }
+  img{
+    width: 100%;
+  }
+  .Mid{
+    display: block;
+  }
+  .Mid .ige img{
+    padding-left: 30px;
+  }
+
+  .Mid .abt p{
+    padding-right: 25px;
+  }
+
+  .top{
+    padding-bottom: 2700px;
+  }
+}
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: block;
+  }
+
+  #menu-btn.fa-times{
+      transform:rotate(180deg);
+  }
+
+  #login-btn .btn{
+      display: none;
+  }
+
+  #login-btn i{
+      display: block;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background: #2666cf;
+      border-top: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a{
+      margin:2rem;
+      display: block;
+      font-size: 2rem;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+  .heading{
+      font-size: 3rem;
+  }
+
+}
+
+
+
+#back-to-main-page-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 10px 20px;
+  /* padding-bottom: 10px; */
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  width: 200px;
+  height: 50px;
+  /* animation: rotate 5s linear infinite; */
+}
+
+#back-to-main-page-btn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  color: #2666cf;
+  
+}
+
+#back-to-main-page-btn span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+
+#back-to-main-page-btn.rotate {
+  animation: rotate 5s linear reverse;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
